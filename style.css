@@ -9,21 +9,182 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Mobile first - 375px*/
 
 body {
-    font: 1.25rem 'Libre Franklin', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font: 16px 'Libre Franklin', sans-serif;
+    background: white;
+    box-sizing: border-box;
 }
 
+.header {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    margin: 20% 0 10% 0;
+}
 
+.header__img {
+    width: 56px;
+    height: auto;
+}
 
+.main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
+.main__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 4%;
+}
+
+.main__title span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.main__paragraph {
+    font-size: 0.7rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 7%;
+}
+
+#email__box {
+    width: 65%;
+    border: 1px solid var(--pale-blue);
+    border-radius: 25px;
+    padding: 0.9rem;
+    margin: 0 auto;
+}
+
+#email__box::placeholder {
+    color: var(--pale-blue);
+    padding-left: 1rem;
+}
+
+.email__button {
+    width: 75%;
+    padding: 0.9rem;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+}
+
+.illustration__img {
+    width: 85%;
+    margin: 4rem 0 6rem 0;
+}
+
+.box__icons {
+    margin-bottom: 2rem;
+}
+.icons {
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid var(--pale-blue);
+    color: var(--blue);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.icons:nth-child(1){
+    padding: 0.5rem 0.7rem;
+}
+
+.footer__copy {
+    color: var(--gray);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.7rem; 
     text-align: center; 
+    color: var(--very-dark-blue);
 }
 
 .attribution a { 
+    text-decoration: none;
     color: hsl(228, 45%, 44%); 
 }
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px){
+    .header {
+        margin: 10% 0 5% 0;
+    }
+
+    .header__img {
+        width: 86px;
+    }
+
+    .main__title {
+        font-size: 2rem;
+        margin-bottom: 1%;
+    }
+        
+    .main__paragraph {
+        font-size: 0.9rem;
+        margin-bottom: 3%;
+    }
+
+    .form {
+        height: 13vh; 
+    }
+
+    #email__box {
+        width: 25%;
+    }
+    
+    .email__button {
+        width: 15%;
+        margin: 0 0 0 0.5rem;
+        box-shadow: 0px 6px 17px 5px var(--pale-blue);
+    }
+
+    .email__button:hover {
+        cursor: pointer;
+        background: var(--pale-blue);
+    }
+
+    .illustration__img {
+        width: 45%;
+        margin: 3rem 0 6rem 0;
+    }
+
+    .icons:hover {
+        cursor: pointer;
+        background: var(--blue);
+        color: var(--pale-blue);
+    }
+
+    .attribution a:hover {
+        cursor: pointer; 
+        color: var(--blue);
+        font-weight: 600;
+}
+}
+
+@media screen and (min-width: 1440px){
+}
+
+@media screen and (min-width: 1920px){}

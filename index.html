@@ -17,34 +17,36 @@
 
 </head>
 <body>
-  <header>
-    <img src="images/logo.svg" alt="ping logo">
+  <header class="header">
+    <img src="images/logo.svg" alt="ping logo" class="header__img">
   </header>
 
-  <main>
-    <h1>We are launching soon!</h1>
+  <main class="main">
+    <h1 class="main__title">We are launching <span>soon!</span></h1>
   
-    <p>Subscribe and get notified</p>
+    <p class="main__paragraph">Subscribe and get notified</p>
   
-    <form action="">
-      <input type="email" id="" required>
-      <button>Notify Me</button>
-    </form>
+    <form class="form">
+      <input type="email" id="email__box" placeholder="Your email address..." required>
 
-    <img src="images/illustration-dashboard.png" alt="illustration dashboard">
+      <button class="email__button">Notify Me</button>
+  </form>
+    
+    
 
-    <footer>
-      <div>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
+    <img src="images/illustration-dashboard.png" alt="illustration dashboard" class="illustration__img">
+
+      <div class="box__icons">
+        <i class="fa-brands fa-facebook-f icons"></i>
+        <i class="fa-brands fa-twitter icons"></i>
+        <i class="fa-brands fa-instagram icons"></i>
       </div>
 
-      <p>&copy; Copyright Ping. All rights reserved.</p>
-    </footer>
   </main>
     
   <footer>
+    <p class="footer__copy">&copy; Copyright Ping. All rights reserved.</p>
+
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/thaiscode">@thaiscode</a>.
