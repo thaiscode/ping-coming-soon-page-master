@@ -94,6 +94,7 @@ body {
 .box__icons {
     margin-bottom: 2rem;
 }
+
 .icons {
     width: auto;
     padding: 0.5rem;
@@ -124,6 +125,17 @@ body {
 .attribution a { 
     text-decoration: none;
     color: hsl(228, 45%, 44%); 
+}
+
+/*Error message*/
+
+.form__alert {
+    color: var(--light-red);
+    font-size: 0.7rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.5rem;
 }
 
 /*Desktop*/
@@ -181,10 +193,11 @@ body {
         cursor: pointer; 
         color: var(--blue);
         font-weight: 600;
-}
-}
+    }
 
-@media screen and (min-width: 1440px){
+    .form__alert {
+        font-size: 0.8rem;
+        width: 38%;
+        text-align: left;
+    }
 }
-
-@media screen and (min-width: 1920px){}

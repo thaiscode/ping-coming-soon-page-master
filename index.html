@@ -27,20 +27,20 @@
     <p class="main__paragraph">Subscribe and get notified</p>
   
     <form class="form">
-      <input type="email" id="email__box" placeholder="Your email address..." required>
+      <input type="email" id="email__box" placeholder="Your email address..." pattern="^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$" required>
 
       <button class="email__button">Notify Me</button>
-  </form>
-    
-    
+
+      <div class="form__alert"></div>
+    </form>
 
     <img src="images/illustration-dashboard.png" alt="illustration dashboard" class="illustration__img">
 
-      <div class="box__icons">
-        <i class="fa-brands fa-facebook-f icons"></i>
-        <i class="fa-brands fa-twitter icons"></i>
-        <i class="fa-brands fa-instagram icons"></i>
-      </div>
+    <div class="box__icons">
+      <i class="fa-brands fa-facebook-f icons"></i>
+      <i class="fa-brands fa-twitter icons"></i>
+      <i class="fa-brands fa-instagram icons"></i>
+    </div>
 
   </main>
     
